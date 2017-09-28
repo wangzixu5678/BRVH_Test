@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.ftkj.baserecyclerviewadapterhelper_test.recycle_multiple.MyRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-          android:id="@+id/type5_listview"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:orientation="vertical"/>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/type5_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:layout_below="@id/type5_listview"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
 
 

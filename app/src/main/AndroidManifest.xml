@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recycle_multiple.MultipleActivity">
+        <activity android:name=".recycle_section.SectionActicity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -24,6 +24,8 @@
         <activity android:name=".recycle_shopping.ShoppingActivity">
         </activity>
         <activity android:name=".recycle_refresh_swipe.RefreshSwipActivity">
+        </activity>
+        <activity android:name=".recycle_multiple.MultipleActivity">
         </activity>
     </application>
 

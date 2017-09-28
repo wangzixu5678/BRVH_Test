@@ -11,4 +11,9 @@
         android:src="@mipmap/ic_launcher"
         android:layout_width="50dp"
         android:layout_height="50dp"/>
+    <EditText
+        android:id="@+id/ac_pop_edittext"
+        android:layout_below="@id/ac_pop_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>

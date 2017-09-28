@@ -28,6 +28,7 @@ public class MultipleActivity extends AppCompatActivity {
         new MyAsynTask().execute();
         mRecyclerView = (RecyclerView) findViewById(R.id.ac_mul_recycler);
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
+        mRecyclerView.setHasFixedSize(true);
         mDatas = new ArrayList<>();
         mMultipleAdapter = new MultipleAdapter(mDatas);
         mMultipleAdapter.setSpanSizeLookup(new BaseQuickAdapter.SpanSizeLookup() {
@@ -103,6 +104,13 @@ public class MultipleActivity extends AppCompatActivity {
                 myDatas6.add("I love android"+i);
             }
             mDatas.add(new MultipleItem<>(MultipleItem.TYPE5,4,myDatas6));
+            /**----------------------------Type6 Test ------------------------*/
+
+            ArrayList<String> mDatas7 = new ArrayList<>();
+            for (int i = 0; i < 4; i++) {
+                mDatas7.add("我是第"+i+"条新闻");
+            }
+            mDatas.add(new MultipleItem<>(MultipleItem.TYPE6,4,mDatas7));
             return null;
         }
 

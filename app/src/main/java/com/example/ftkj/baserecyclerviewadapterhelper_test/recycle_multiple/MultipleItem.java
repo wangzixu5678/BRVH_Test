@@ -14,6 +14,7 @@ public class MultipleItem<T> implements MultiItemEntity {
     public static final int TYPE3 = 3;
     public static final int TYPE4 = 4;
     public static final int TYPE5 = 5;
+    public static final int TYPE6 = 6;
     private int itemType;
     private int spanSize;
     private List<T> t;
