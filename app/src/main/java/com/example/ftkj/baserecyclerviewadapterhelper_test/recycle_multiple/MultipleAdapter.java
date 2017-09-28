@@ -66,6 +66,10 @@ public class MultipleAdapter extends BaseMultiItemQuickAdapter<MultipleItem, Bas
                 Log.d("AAAA", "convert1: " + item.getDatas().toString());
                 break;
             case MultipleItem.TYPE3:
+
+                /**
+                 * 使用helper.getLayoutPosition()来判断相同类型布局的不同MutupleItme。
+                 */
                 if (helper.getLayoutPosition() == 2) {
                     helper.addOnClickListener(R.id.type3_image);
                 } else if (helper.getLayoutPosition() == 3) {
@@ -76,8 +80,6 @@ public class MultipleAdapter extends BaseMultiItemQuickAdapter<MultipleItem, Bas
                 Log.d("AAAA", "convert4: " + item.getDatas().toString());
                 break;
             case MultipleItem.TYPE5:
-//                MyListView listView = helper.getView(R.id.type5_listview);
-//                listView.setAdapter(new ArrayAdapter<String>(mContext,android.R.layout.simple_list_item_1,android.R.id.text1,item.getDatas()));
                 RecyclerView recyclerView = helper.getView(R.id.type5_listview);
                 recyclerView.setNestedScrollingEnabled(false);
                 recyclerView.setAdapter(new MyQuickAdapter(android.R.layout.simple_list_item_1,item.getDatas()));
