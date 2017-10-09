@@ -16,12 +16,13 @@ import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.R;
+import com.example.ftkj.baserecyclerviewadapterhelper_test.base.BaseActivity;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.util.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class ShoppingActivity extends AppCompatActivity {
+public class ShoppingActivity extends BaseActivity {
 
     private RecyclerView mRecyclerView;
     private ArrayList<Product> mProducts;
@@ -95,6 +96,7 @@ public class ShoppingActivity extends AppCompatActivity {
                                         public void onClick(DialogInterface dialog, int which) {
                                             mProducts.remove(pos);
                                             mShoppintAdapter.notifyDataSetChanged();
+                                            notifiTotlePrice();
                                             Log.d("AAA", "onClick: " + mShoppingCar.toString());
                                         }
                                     })

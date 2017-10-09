@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.R;
+import com.example.ftkj.baserecyclerviewadapterhelper_test.base.BaseActivity;
 import com.youth.banner.Banner;
 import com.youth.banner.listener.OnBannerListener;
 import com.youth.banner.loader.ImageLoader;
@@ -20,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 
-public class AnimActivity extends AppCompatActivity {
+public class AnimActivity extends BaseActivity {
 
     private RecyclerView mRecyclerView;
     private ArrayList<String> mArrayList;
@@ -30,7 +31,6 @@ public class AnimActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initAdapter();
         initView();
         initData();

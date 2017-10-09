@@ -11,11 +11,12 @@ import android.support.v7.widget.RecyclerView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.R;
+import com.example.ftkj.baserecyclerviewadapterhelper_test.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MultipleActivity2 extends AppCompatActivity {
+public class MultipleActivity2 extends BaseActivity {
 
     private RecyclerView mRecyclerView;
     private List<MyEntity> mDatas;

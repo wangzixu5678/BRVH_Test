@@ -16,12 +16,13 @@ import com.bumptech.glide.request.target.Target;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.R;
+import com.example.ftkj.baserecyclerviewadapterhelper_test.base.BaseActivity;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.recycle_multiple.MultipleItem;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExpandableActivity extends AppCompatActivity {
+public class ExpandableActivity extends BaseActivity {
 
     private RecyclerView mRecyclerView;
     private List<MultiItemEntity> mDatas;

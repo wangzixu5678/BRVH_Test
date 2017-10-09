@@ -9,12 +9,13 @@ import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.R;
+import com.example.ftkj.baserecyclerviewadapterhelper_test.base.BaseActivity;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.util.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MultipleActivity extends AppCompatActivity {
+public class MultipleActivity extends BaseActivity {
 
 
     private RecyclerView mRecyclerView;

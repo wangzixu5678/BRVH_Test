@@ -13,13 +13,14 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.animation.BaseAnimation;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.R;
+import com.example.ftkj.baserecyclerviewadapterhelper_test.base.BaseActivity;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.util.ToastUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SectionActicity extends AppCompatActivity {
+public class SectionActicity extends BaseActivity{
 
 
     private RecyclerView mRecyclerView;

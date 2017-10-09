@@ -13,10 +13,11 @@ import android.widget.TextView;
 import com.ajguan.library.EasyRefreshLayout;
 import com.ajguan.library.LoadModel;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.R;
+import com.example.ftkj.baserecyclerviewadapterhelper_test.base.BaseActivity;
 
 import java.util.ArrayList;
 
-public class RefreshSwipActivity extends AppCompatActivity {
+public class RefreshSwipActivity extends BaseActivity {
 
     private EasyRefreshLayout mEasyLayout;
     private RecyclerView mRecyclerView;

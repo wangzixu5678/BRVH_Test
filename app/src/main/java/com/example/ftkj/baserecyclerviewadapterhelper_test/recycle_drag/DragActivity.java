@@ -11,12 +11,13 @@ import com.chad.library.adapter.base.callback.ItemDragAndSwipeCallback;
 import com.chad.library.adapter.base.listener.OnItemDragListener;
 import com.chad.library.adapter.base.listener.OnItemSwipeListener;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.R;
+import com.example.ftkj.baserecyclerviewadapterhelper_test.base.BaseActivity;
 import com.example.ftkj.baserecyclerviewadapterhelper_test.util.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DragActivity extends AppCompatActivity {
+public class DragActivity extends BaseActivity {
 
     private RecyclerView mRecyclerView;
     private List<String> mDatas;
