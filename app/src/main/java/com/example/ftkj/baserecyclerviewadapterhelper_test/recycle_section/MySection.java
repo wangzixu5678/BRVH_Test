@@ -10,4 +10,8 @@ public class MySection extends SectionEntity<MyBean> {
     public MySection(boolean isHeader, String header) {
         super(isHeader, header);
     }
+
+    public MySection(MyBean myBean) {
+        super(myBean);
+    }
 }

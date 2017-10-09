@@ -10,13 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recycle_multiple.MultipleActivity2">
+        <activity
+            android:name=".WelcomActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".recycle_anim.AnimActivity"/>
+        <activity android:name=".recycle_drag.DragActivity"/>
+        <activity android:name=".recycle_shopping.ShoppingActivity"/>
+        <activity android:name=".recycle_multiple.MultipleActivity"/>
+        <activity android:name=".recycle_multiple.MultipleActivity2"/>
+        <activity android:name=".recycle_section.SectionActicity"/>
+        <activity android:name=".recycle_refresh_swipe.RefreshSwipActivity"/>
+        <activity android:name=".recycle_expandable.ExpandableActivity"/>
     </application>
 
 </manifest>

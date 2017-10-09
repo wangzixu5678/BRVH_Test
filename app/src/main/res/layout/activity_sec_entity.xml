@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:id="@+id/ac_sec_entity_ll"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_upload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+       android:layout_gravity="center"
+        android:id="@+id/ac_sec_entity_tv"
+        tools:text="我是内容"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
